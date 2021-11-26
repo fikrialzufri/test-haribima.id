@@ -1,0 +1,36 @@
+#Get Data
+GET http://test.test/api/karyawan
+
+###
+#Create Data
+POST http://test.test/api/karyawan
+content-type: application/json
+
+{
+    "nama_lengkap": "Aisyah",
+    "tempat_lahir": "Samarinda",
+    "tgl_lahir": "1991/12/13",
+    "email": "fikrizufri@gmail.com",
+    "phone": "085349103354",
+    "pekerjaan": "Programmer",
+    "gaji": "10000000"
+}
+
+###
+#update Data
+PUT http://test.test/api/karyawan/1
+content-type: application/json
+
+{
+    "nama_lengkap": "fikri",
+    "tempat_lahir": "Daha Utama",
+    "tgl_lahir": "1991/12/13",
+    "email": "fikri@gmail.com",
+    "phone": "085349103354",
+    "pekerjaan": "Programmer",
+    "gaji": "10000000"
+}
+
+###
+#delete Data
+DELETE  http://test.test/api/karyawan/3
